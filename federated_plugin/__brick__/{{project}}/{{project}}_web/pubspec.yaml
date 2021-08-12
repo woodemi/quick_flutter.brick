@@ -1,4 +1,4 @@
-name: {{project}}
+name: {{project}}_web
 description: A new flutter plugin project.
 version: 0.0.1
 homepage:
@@ -10,10 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
   {{project}}_platform_interface:
     path: ../{{project}}_platform_interface
-  {{project}}_web:
-    path: ../{{project}}_web
 
 dev_dependencies:
   flutter_test:
@@ -30,13 +30,9 @@ flutter:
   # adding or updating assets for this project.
   plugin:
     platforms:
-      android:
-        package: com.example.{{project}}
-        pluginClass: {{project}}Plugin
-      ios:
-        pluginClass: {{project}}Plugin
       web:
-        default_package: {{project}}_web
+        pluginClass: {{project}}Plugin
+        fileName: {{project}}_web.dart
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
