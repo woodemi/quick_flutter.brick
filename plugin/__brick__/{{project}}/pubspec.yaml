@@ -10,10 +10,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
 
 dev_dependencies:
   flutter_test:
-    sdk: flutter
+    sdk: flutter  
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -31,6 +33,9 @@ flutter:
         pluginClass: {{project}}Plugin
       ios:
         pluginClass: {{project}}Plugin
+      web:
+        pluginClass: {{project}}Web
+        fileName: {{project}}_web.dart
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
