@@ -88,5 +88,5 @@ mason make quick_flutter_federated_plugin --project YOUR_PROJECT_NAME
 / | Android | iOS | Web | macOS | Windows | Linux
 --- | --- | --- | --- | --- | --- | ---
 APP | ✅ | ✅ | ✅ | ✅ | ✅ | ✅
-plugin | ✅ | ✅ | ✅
-federated-plugin | ✅ | ✅ | ✅
+plugin | ✅ | ✅ | ✅ | ✅ | ✅ | ✅
+federated-plugin | ✅ | ✅ | ✅ | ✅ | ✅ | ✅
