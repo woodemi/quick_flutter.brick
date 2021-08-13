@@ -1,4 +1,4 @@
-name: {{project}}
+name: {{project}}_windows
 description: A new flutter plugin project.
 version: 0.0.1
 homepage:
@@ -10,14 +10,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  {{project}}_platform_interface:
-    path: ../{{project}}_platform_interface
-  {{project}}_web:
-    path: ../{{project}}_web
-  {{project}}_macos:
-    path: ../{{project}}_macos
-  {{project}}_windows:
-    path: ../{{project}}_windows
 
 dev_dependencies:
   flutter_test:
@@ -34,17 +26,8 @@ flutter:
   # adding or updating assets for this project.
   plugin:
     platforms:
-      android:
-        package: com.example.{{project}}
-        pluginClass: {{project}}Plugin
-      ios:
-        pluginClass: {{project}}Plugin
-      web:
-        default_package: {{project}}_web
-      macos:
-        default_package: {{project}}_macos
       windows:
-        default_package: {{project}}_windows
+        pluginClass: {{project}}Plugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
