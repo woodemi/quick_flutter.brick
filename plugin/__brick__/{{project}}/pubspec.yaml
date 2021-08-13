@@ -36,6 +36,8 @@ flutter:
       web:
         pluginClass: {{project}}Web
         fileName: {{project}}_web.dart
+      macos:
+        pluginClass: {{project}}Plugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
