@@ -1,4 +1,4 @@
-package com.example.{{project}}
+package com.example.{{project}}_android
 
 import androidx.annotation.NonNull
 

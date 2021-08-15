@@ -1,4 +1,4 @@
-group 'com.example.{{project}}'
+group 'com.example.{{project}}_android'
 version '1.0-SNAPSHOT'
 
 buildscript {
