@@ -1,6 +1,6 @@
 A `multiplatform-project` generator for Flutter [APP](https://flutter.dev/docs/get-started/codelab)/[plugin](https://flutter.dev/docs/development/packages-and-plugins/developing-packages)/[federated-plugin](https://flutter.dev/docs/development/packages-and-plugins/developing-packages#federated-plugins), via [mason](https://github.com/felangel/mason)
 
-![image](https://user-images.githubusercontent.com/7928961/129202560-d53f9aaa-abb5-465a-a08a-21b1f91de2d1.png)
+![image](https://user-images.githubusercontent.com/7928961/129476651-8944eea7-913f-43bc-984a-3d8a927e30b2.png)
 
 ## Using
 
@@ -24,23 +24,23 @@ where mason
 
 ### make `Flutter APP` project
 
-- install `quick_flutter` brick of `mason`
+- install `quick_flutter_app` brick of `mason`
 
 ```sh
-mason install https://github.com/woodemi/quick_flutter.brick --path .
+mason install https://github.com/woodemi/quick_flutter.brick --path app
 ```
 
 - make `Flutter APP` project with mutliplatform
 
 ```sh
 # interactively
-mason make quick_flutter
+mason make quick_flutter_app
 
 # with params
-mason make quick_flutter --project YOUR_PROJECT_NAME
+mason make quick_flutter_app --project YOUR_PROJECT_NAME
 ```
 
-![image](https://user-images.githubusercontent.com/7928961/129035046-1efd5044-81f5-40e1-8df6-51571ff66799.png)
+![image](https://user-images.githubusercontent.com/7928961/129476813-ce253278-b280-4114-8b3a-ebef9429a3ed.png)
 
 ### make `Flutter plugin` project
 
@@ -65,23 +65,28 @@ mason make quick_flutter_plugin --project YOUR_PROJECT_NAME
 
 ### make `Flutter federated plugin` project
 
-- install `quick_flutter_federated_plugin` brick of `mason`
+- install `quick_flutter_federated` or `quick_flutter_federated_legacy` brick of `mason`
+
+> CAUTION: According to https://github.com/woodemi/quick_flutter.brick/issues/22, `quick_flutter_federated_legacy` is for predate structure, where Android & iOS were in the app-facing package
 
 ```sh
-mason install https://github.com/woodemi/quick_flutter.brick --path federated_plugin
+mason install https://github.com/woodemi/quick_flutter.brick --path federated
+# mason install https://github.com/woodemi/quick_flutter.brick --path federated_legacy
 ```
 
 - make `Flutter federated plugin` project with mutliplatform
 
 ```sh
 # interactively
-mason make quick_flutter_federated_plugin
+mason make quick_flutter_federated
+# mason make quick_flutter_federated_legacy
 
 # with params
-mason make quick_flutter_federated_plugin --project YOUR_PROJECT_NAME
+mason make quick_flutter_federated --project YOUR_PROJECT_NAME
+# mason make quick_flutter_federated_legacy --project YOUR_PROJECT_NAME
 ```
 
-![image](https://user-images.githubusercontent.com/7928961/129201248-c2af16dd-9244-4211-aac2-1f0baa0811ca.png)
+![image](https://user-images.githubusercontent.com/7928961/129476948-fbf739be-76b6-4b70-8177-d7223c7df969.png)
 
 ## Supported platforms
 

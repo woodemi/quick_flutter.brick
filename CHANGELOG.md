@@ -1,3 +1,11 @@
+## 0.4.0
+
+**BREAKING CHANGE**
+
+* Refactor `quick_flutter` brick to `quick_flutter_app` in `app` path
+* Refactor `quick_flutter_federated_plugin` brick to `quick_flutter_federated_legacy` in `federated_legacy` path
+* Initial release of `quick_flutter_federated` brick
+
 ## 0.3.0
 
 * `quick_flutter_plugin` brick
